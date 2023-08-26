@@ -6,65 +6,66 @@
     <title>StudySupport</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <body>
-    <header>
-      <div class="container">
-        <div class="logo"></div>
-        <nav>
+    <header class="bg-primary">
+      <div class="container navbar">
+        <!-- <div class="logo"><img src="./assets/logo.png" alt="Study support logo"></div> -->
+        <div><h3 class="logo">StudySupport</h3></div>
+        <nav class="fs-small-2">
           <ul>
             <li>Class times & Pricing</li>
-            <li>Conatct us</li>
-            <li>Call 0208 004 3539</li>
+            <li>Contact us</li>
+            <li class="bg-neutral-1 nav-contact"><img src="./assets/phone.svg" alt="Telephone">Call 0208 004 3539</li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
+    <main class="bg-primary">
       <div class="container">
-        <div class="split">
+        <div class="split mb2">
           <div class="main-content">
-            <h1>Achieve your goals at Study Support</h1>
-            <button>Call now</button>
+            <h1 class="fs-large-2">Achieve your goals at Study Support</h1>
+            <div><button class="bg-secondary"><span>Call now</span><img src="./assets/arrow.svg" alt="right arrow"></button></div>
           </div>
-          <div>
+          <div class="main-image">
             <img
             src="./assets/hero.svg"
             alt="I'm going to oxford to study medicine. I aced my exam."
             />
           </div>
         </div>
-        <h4>More than just a tuition centre</h4>
+        <h4 class="text-center fs-medium-2">More than just a tuition centre</h4>
       </dv>
     </main>
-    <section>
-        <container>
-            <div class="split">
-                <div>
-                    <h3>Trusted by hundreds of parents and students<h3>
-                    <p>With over 10 years of experience teaching in 
-                        in the heart of east London, we've
-                        helped hundreds of students
-                        and parents achieve their goals. And, we're
-                        just getting started!</p>
+    <section class="bg-neutral-2">
+        <div class="container">
+            <div class="split mb2">
+                <div class="tutor-section">
+                    <h3 class="fs-medium-2">Trusted by hundreds of parents and students</h3>
+                    <p>With over 10 years of experience teaching in the heart of east London, we've helped  hundreds of students and parents achieve their goals. And, we're just getting started!</p>
                 </div>
-                <div><img src="./assets/tutorgraphic.svg" alt="Tutor graphic"></div>
+                <div class="tutor-section"><img class="tutor-section--img" src="./assets/tutorgraphic.svg" alt="Tutor graphic"></div>
             </div>
-            <div class="split">
-                <div>
-                    <h3>Only the best, background-
-                        checked tutors</h3>
+            <div class="split flex-reverse">
+                <div class="tutor-section">
+                    <h3 class="fs-medium-2">Only the best, background-checked tutors</h3>
                     <p>Our tutors are experts in their subjects. All of our tutors are background checked and we vet and onboard each and every one.</p>
                 </div>
-                <div><img src="./assets/tutorgraphic2.svg" alt="Tutor Graphic 2"></div>
+                <div class="tutor-section"><img class=" tutor-section--img" src="./assets/tutorgraphic2.svg" alt="Tutor Graphic 2"></div>
             </div>
-        </container>
+        </div>
     </section>
-    <section>
-        <div class="container">
-            <h2>Trusted by parents and students</h2>
-            <button>Parents</button><button>Students</button>
-            <div class="review-section-student">
+    <section class="bg-primary">
+        <div class="container text-center">
+            <h2 class="fs-large-3">Trusted by parents and students</h2>
+            <div class="button-container">
+                <button>Parents</button><button class="bg-secondary">Students</button>
+            </div>
+            <div class="review-section-student split">
                 <div class="review">
                     <img src="./assets/studentprofile1.svg" alt="Student profile 1">
                     <p class="review-title">I KNOW HOW TO FOCUS ON DETAIL</p>
@@ -73,21 +74,20 @@
                     <div class="review-reviewer">Jawwad <br> Student</div>
                 </div>
                 <div class="review">
-                    <img src="./assets/studentprofile2.svg" alt="Student profile 2">
+                    <!-- <img src="./assets/studentprofile2.svg" alt="Student profile 2">
                     <p class="review-title">MY GRADES ARE GETTING BETTER</p>
-                    <p class="review-comment">My mum found a native Spanish
-                        tutor on Tutorful, who is
-                        absolutely great! She is helping
-                        me with conversational Spanish
-                        but also preparing me for my A-
-                        Level exams and my grades are
-                        getting better!</p>
+                    <p class="review-comment">My mum found a native Spanish tutor on Tutorful, who is absolutely great! She is helping me with conversational Spanish but also preparing me for my A-Level exams and my grades are getting better!</p>
                     <p class="review-result"></p>
-                    <div class="review-reviewer">Mark <br> Parent</div>
+                    <div class="review-reviewer">Mark <br> Parent</div> -->
+                    <img src="./assets/studentprofile2.svg" alt="Student profile 3">
+                    <p class="review-title">MY GRADES ARE GETTING BETTER</p>
+                    <p class="review-comment">My mum found a native Spanish tutor on Tutorful, who is absolutely great! She is helping me with conversational Spanish but also preparing me for my A-Level exams and my grades are getting better!</p>
+                    <p class="review-result">(Achieved 2 double A*s and 4 As)</p>
+                    <div class="review-reviewer">Maryam <br> Student</div>
                 </div>
                 <div class="review">
                     <img src="./assets/studentprofile3.svg" alt="Student profile 3">
-                    <p class="review-title">Tutors were always helpful</p>
+                    <p class="review-title">TUTORS WERE ALWAYS HELPFUL</p>
                     <p class="review-comment">My tutors were always helpful and made it easy for me to understand. I was able to achieve from their experience</p>
                     <p class="review-result">(Achieved 2 double A*s and 4 As)</p>
                     <div class="review-reviewer">Maryam <br> Student</div>
@@ -118,61 +118,63 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="bg-neutral-2">
         <div class="container">
-            <div>
-                <h2>Book in your free assessment</h2>
+            <div class="container container--narrow text-center mb6">
+                <h3 class="fs-medium-1">Book in your free assessment</h3>
                 <img src="./assets/getstarted.svg" alt="Get Started">
                 <p>Book in your free assessment so that we can start you on your learning journey</p>
-                <button>Call now</button>
+                <button class="bg-secondary"><span>Call now</span><img src="./assets/arrow.svg" alt="right arrow"></button>
             </div>
             <div>
-                <h3>Getting started us as easy as 1-2-3</h3>
-                <p>How to enrol at Study Support</p>
-                <div class="booking-section">
-                    <div class="booking-step">
-                        <div class="booking-step-number">1</div>
-                        <div class="booking-step-title">Book an assessment</div>
-                        <div class="booking-step-text"> We encourage all new students to take an assessment with us in order to understand your current competencies.</div>
+                <h3 class="text-center fs-medium-2">Getting started us as easy as 1-2-3</h3>
+                <p class="text-center mb2_5 semi-bold">How to enrol at Study Support</p>
+                <div class="booking-section split">
+                    <div class="booking-step bg-neutral-1">
+                        <div class="booking-step-number mb2">1</div>
+                        <div class="booking-step-title mb1">Book an assessment</div>
+                        <div class="booking-step-text fs-small-2"> We encourage all new students to take an assessment with us in order to understand your current competencies.</div>
                     </div>
-                    <div class="booking-step">
-                        <div class="booking-step-number">2</div>
-                        <div class="booking-step-title">Create a plan</div>
-                        <div class="booking-step-text">We'll discuss with you realistic goals that we can achieve an create a structured plan in order to do so.</div>
+                    <div class="booking-step bg-neutral-1">
+                        <div class="booking-step-number mb2">2</div>
+                        <div class="booking-step-title mb1">Create a plan</div>
+                        <div class="booking-step-text fs-small-2">We'll discuss with you realistic goals that we can achieve an create a structured plan in order to do so.</div>
                     </div>
-                    <div class="booking-step">
-                        <div class="booking-step-number">3</div>
-                        <div class="booking-step-title">Start your first lesson</div>
-                        <div class="booking-step-text">You can start your learning journey as you are paired up with the appropriate tutors to help achieve your academic goals. </div>
+                    <div class="booking-step bg-neutral-1">
+                        <div class="booking-step-number mb2">3</div>
+                        <div class="booking-step-title mb1">Start your first lesson</div>
+                        <div class="booking-step-text fs-small-2">You can start your learning journey as you are paired up with the appropriate tutors to help achieve your academic goals. </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="bg-dark">
         <div class="container">
-            <div class="split">
+            <div class="split footer-info fs-medium-2">
                 <div>
-                    <p>Call us on</p>
-                    <div>
-                        <div>0208 004 3539</div>
-                        <div>0782 342 2397</div>
-                        <div>0793 092 7493</div>
+                    <div class="contact-container">
+                        <p>Call us on</p>
+                        <div class="contact-numbers mb2">
+                            <div class="contact-info mb1">0208 004 3539</div>
+                            <div class="contact-info mb1">0782 342 2397</div>
+                            <div class="contact-info mb1">0793 092 7493</div>
+                        </div>
                     </div>
-                    <div>
+                    <div class="contact-address mb2">
                         255-259 Commercial Road London, E1 2BT
                     </div>
                 </div>
                 <div>
-                    <div>Connect with us</div>
-                    <p>Follow us for news and updates</p>
+                    <div class="mb1">Connect with us</div>
+                    <p class="fs-small-2">Follow us for news and updates</p>
                     <div class="socials">
-                        <img src="./assets//facebook.svg" alt="facebook">
-                        <img src="./assets/instagram.svg" alt="instagram">
+                        <img class="fb-icon" src="./assets//facebook.svg" alt="facebook">
+                        <img class="ig-icon" src="./assets/instagram.svg" alt="instagram">
                     </div>
                 </div>
             </div>
-            <p>All rights reserved © Study Support 2023</p>
+            <div class="text-center fs-small-2">All rights reserved © Study Support 2023</div>
         </div>
     </footer>
   </body>
