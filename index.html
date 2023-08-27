@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study Support</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./hamrburger.js" defer></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -223,12 +224,4 @@
         parentReviews.style.display = "none";
         studentReviews.style.display = "flex";
     });
-
-    const navbarToggle = document.getElementById('navbarToggle');
-    const navbar = document.getElementById('navbar');
-
-    navbarToggle.addEventListener('click', () => {
-        navbar.classList.toggle('active');
-        navbarToggle.classList.toggle('active');
-});
 </script>
