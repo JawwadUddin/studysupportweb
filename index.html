@@ -13,8 +13,7 @@
   </head>
   <body>
     <header class="bg-primary">
-      <div class="container navbar">
-        <!-- <div class="logo"><img src="./assets/logo.png" alt="Study support logo"></div> -->
+      <div class="container navbar desktop-only">
         <div><a href="./index.html">
             <h3 class="logo">StudySupport</h3>
         </a></div>
@@ -28,8 +27,27 @@
           </ul>
         </nav>
       </div>
+      <div class="container navbar mobile-only">
+          <div class="logo"><a href="./index.html">
+              <h3 class="logo">StudySupport</h3>
+          </a></div>
+            <div class="navbar-toggle" id="navbarToggle">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            </div>
+      </div>
     </header>
     <main class="bg-primary">
+        <nav class="navbar-mobile mobile-only" id="navbar">
+            <ul>
+                <a href="">
+                    <li>Class times & Pricing</li>
+                </a>
+                <a href="./contact-us.html"><li>Contact us</li></a>
+            </ul>
+        </nav>
+    
       <div class="container">
         <div class="split mb2">
           <div class="main-content">
@@ -205,4 +223,12 @@
         parentReviews.style.display = "none";
         studentReviews.style.display = "flex";
     });
+
+    const navbarToggle = document.getElementById('navbarToggle');
+    const navbar = document.getElementById('navbar');
+
+    navbarToggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+        navbarToggle.classList.toggle('active');
+});
 </script>

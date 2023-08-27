@@ -141,8 +141,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
-    flex-direction: column;
+    padding-top: 1rem;
 }
 
 .logo {
@@ -171,8 +170,7 @@ a {
 nav ul li {
     list-style: none;
     font-weight: 600;
-    padding: 0.1rem;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 .review {
@@ -312,6 +310,14 @@ footer {
     display: none;
 }
 
+.mobile-only {
+    display: flex;
+}
+
+.desktop-only {
+    display: none;
+}
+
 @media (min-width: 40em) {
     section, main {
         padding: 7rem 0;
@@ -384,10 +390,20 @@ footer {
 
     .navbar {
         flex-direction: row;
+        padding: 1rem 0;
+
     }
 
     nav ul {
         gap: 2rem;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    .desktop-only {
+        display: flex;
     }
 }
 
@@ -480,3 +496,92 @@ footer {
         gap: 1rem;
     }
   }
+
+/* mobile navbar styling */
+
+.navbar-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.active .navbar-toggle {
+    transform: rotate(45deg);
+}
+
+.active .bar.bar1 {
+    transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.active .bar.bar2 {
+    opacity: 0;
+}
+
+.active .bar.bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+main, section {
+    position: relative;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-content li {
+    padding: 0.3rem;
+}
+
+.navbar-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    background-color: var(--clr-primary-900);
+    color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar-mobile--light {
+    background-color: var(--clr-primary-300);
+}
+
+.navbar-mobile.active {
+    transform: translateX(0);
+}
+
+.navbar-mobile ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.navbar-mobile a {
+    border-bottom: 1px solid var(--clr-neutral-100);
+}
+
+.navbar-mobile a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    padding: 1rem;
+}
+
+.navbar-mobile a:hover {
+    color: var(--clr-secondary-500);
+}
