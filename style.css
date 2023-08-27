@@ -35,7 +35,6 @@ body {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.6rem;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -534,6 +533,7 @@ footer {
 
 main, section {
     position: relative;
+    overflow-x: hidden;
 }
 
 .navbar-content {
