@@ -146,6 +146,12 @@ button {
 
 .logo {
     margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 3.5rem;
 }
 
 .nav-contact {
@@ -171,6 +177,7 @@ nav ul li {
     list-style: none;
     font-weight: 600;
     font-size: 0.8rem;
+    padding: 0.8rem;
 }
 
 #studentReviews, #parentReviews {
@@ -260,6 +267,10 @@ img {
 
 .mb1 {
     margin-bottom: 1rem;
+}
+
+.mt2 {
+    margin-top: 2rem;
 }
 
 .mb2 {
@@ -394,7 +405,6 @@ footer {
     nav ul li {
         list-style: none;
         font-weight: 600;
-        padding: 0.8rem;
         font-size: 1rem;
     }
 
