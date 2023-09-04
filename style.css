@@ -198,6 +198,11 @@ nav ul li {
     min-width: 320px;
 }
 
+.review img {
+    width: 178.72px;
+    height: 178.72px;
+}
+
 .review-title {
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
@@ -448,11 +453,8 @@ footer {
         display: flex;
     }
 
-    #studentReviews, #parentReviews {
-        overflow-x: inherit;
-    }
     .review {
-        min-width: inherit;
+        min-width: 30%;
     }
 }
 
